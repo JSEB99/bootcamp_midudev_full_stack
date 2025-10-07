@@ -1705,7 +1705,7 @@ Cuantas veces se tiene que repetir la pelicula, donde con `animation-iteration-c
 
 De igual forma tambien tenemos `animation-delay` para **demorar** el inicio de la animación *(con segundos o milisegundos)*.
 
-> ![NOTE]
+> [!NOTE]
 > No es necesario el valor inicial **en algunos casos**, ya que el lo sabe por defecto con su elemento. *En casos que sea el mismo que tenga por defecto el elemento*
 
 #### Mas propiedades
