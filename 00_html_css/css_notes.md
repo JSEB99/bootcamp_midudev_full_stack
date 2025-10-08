@@ -90,6 +90,9 @@
     - [FPS *(Fotogramas por segundo)*](#fps-fotogramas-por-segundo)
     - [Animaciones del Scroll](#animaciones-del-scroll)
     - [Galeria de imagenes](#galeria-de-imagenes)
+- [Desktop-first | Mobile-first](#desktop-first--mobile-first)
+- [Nesting CSS](#nesting-css)
+- [Caracteres especiales](#caracteres-especiales)
 
 ## ¿Donde poner los estilos?
 
@@ -251,13 +254,15 @@ En [MDN](https://developer.mozilla.org/es/docs/Web/HTML) vas a la **formal defin
 ## Pseudo-clases
 
 Los elementos HTML tienen un **estado** base en el que se encuentran. Con las `pseudo-clases` podemos atribuirle a los elementos ciertos estados como:
-- hover: cuando pasemos el mouse por encima
-- active: cuando damos clic *(en ese instante)*
-- focus: en campos de entrada cuando le ponemos el focó *(estamos dentro)*
+- `hover`: cuando pasemos el mouse por encima
+- `active`: cuando damos clic *(en ese instante)*
+- `focus`: en campos de entrada cuando le ponemos el focó *(estamos dentro)*
+- `disabled`: cuando este deshabilitado el elemento
 - etc
 - [Doc pseudoclases](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes)
 
 En las herramientas de desarrollo podemos simular, en las opciones que muestran como por ejemplo `:hov`.
+
 
 - [Regresar](#contenido)
 
@@ -1918,5 +1923,41 @@ section img{
     }
 }
 ```
+
+- [Regresar](#contenido)
+
+## Desktop-first | Mobile-first
+
+- `desktop-first`: Los diseños se realizan **principalmente** en desktop y se adaptan a mobile
+- `mobile-first`: Los diseños se realizan **principalmente** en mobile y se adaptan a desktop
+
+- [Regresar](#contenido)
+
+## Nesting CSS
+
+Puedes integrar **selectores** dentro de otro para asi evitar tener que escribir ese **selector** en especifico en otra linea. Para ello simplemente lo anidamos uno dentro de otro
+
+```css
+div {
+    background-color: red;
+    p {
+        font-size: 20px;
+    }
+}
+/*Es igual a */
+div {
+    background-color: red;
+}
+
+div p {
+    font-size: 20px;
+}
+```
+
+- [Regresar](#contenido)
+
+## Caracteres especiales
+
+Ciertos caracteres como `<` y `>` los podemos usar con una codificación [ASCII](https://ascii.cl/es/codigos-html.htm), ejemplo `< = &lt` y asi hay mas listas.
 
 - [Regresar](#contenido)
