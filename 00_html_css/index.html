@@ -11,27 +11,29 @@
 </head>
 
 <body>
-  <header>
-    <h2>DevJobs</h2>
-    <div class="header-nav">
+  <header class="header-home">
+    <a href="index.html">
+      <h2>DevJobs</h2>
+    </a>
+    <div class="header-nav-home">
       <nav>
-        <a href="">Buscar</a>
+        <a href="search.html">Buscar</a>
         <a href="">Empleos</a>
         <a href="">Empresas</a> <!--Hypertext reference-->
         <a href="">Salarios</a>
       </nav>
-      <div> <!--Contenedor Génerico, sin semantica-->
-        <a href="" class="header-actions">Publicar un empleo</a>
-        <a href="" class="header-actions">Iniciar sesión</a>
+      <div class="header-actions"> <!--Contenedor Génerico, sin semantica-->
+        <a href="" class="btn-action">Publicar un empleo</a>
+        <a href="" class="btn-action">Iniciar sesión</a>
       </div>
     </div>
   </header>
-  <main>
+  <main class="main-home">
     <section>
       <img src="./background.webp" width=200 alt="persona buscando empleo">
       <h1>Encuentra el trabajo de tus sueños</h1>
       <p>Únete a la comunidad más grande de desarrolladores y encuentra tu próxima oportunidad.</p>
-      <form role="search">
+      <form role="search" class="form-home">
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -46,12 +48,11 @@
       </form>
     </section>
     <section>
-      <header>
+      <header class="section-header">
         <h2>¿Por Qué DevJobs?</h2>
         <p>
           DevJobs es la principal plataforma de búsqueda de empleo para desarrolladores. Conectamos a los
-          mejores
-          talentos con las empresas más innovadoras
+          desarrolladores con las mejores empresas del mundo.
         </p>
       </header>
       <footer>
